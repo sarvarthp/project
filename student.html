@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <img src="top1.jpg" alt="mit">
+    <hr>
+
+    <div class="stud">
+      <br>
+
+      <label for="cs"><strong><h3>Select Classroom:</h3></strong></label>
+      <select class="choose1" name="">
+        <option value="">Please Select Classroom</option>
+        <option value="">D201</option>
+        <option value="">D301</option>
+        <option value="">D401</option>
+
+      </select>
+
+      <label for="time"><strong><h3>Select Time:</h3></strong></label>
+      <select class="choose1" name="">
+        <option value="">Please Select Time</option>
+        <option value="">9:00AM - 11:00AM</option>
+        <option value="">12:00PM - 2:00PM</option>
+        <option value="">3:00PM - 5:00PM</option>
+
+      </select>
+<br>
+      <label for="event"><strong><h3>Name of Event :</h3></strong></label>
+
+      <input type="textarea" name="" value="">
+<br>
+      <button class="al" onclick="myFunction()" type="button"><strong>Allocate</strong></button>
+
+      <h3 id="demo"></h3>
+
+      <script>
+function myFunction() {
+  var txt;
+ if (confirm("Confirmation for Allotement!")) {
+   txt = "Your Room Allocated Succesfully";
+ } else {
+   txt = "Please Re-enter Data !!";
+ }
+ document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
+    </div>
+
+    </body>
